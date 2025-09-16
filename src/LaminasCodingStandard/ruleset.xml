@@ -181,35 +181,14 @@
          int instead of integer etc. -->
     <!-- checked by PSR12.Keywords.ShortFormTypeKeywords -->
 
-    <!-- 2.6 Variables -->
+    <!-- 2.6 Trailing commas -->
+
+    <!-- 2.7 Naming -->
 
     <!-- Additional Laminas rules -->
 
     <!-- Variable names MUST be declared in camelCase. -->
     <rule ref="WebimpressCodingStandard.NamingConventions.ValidVariableName"/>
-
-    <!-- 2.7 Arrays -->
-
-    <!-- Additional Laminas rules -->
-
-    <!-- The short array syntax MUST be used to define arrays. -->
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
-    <!-- All values in multiline arrays must be indented with 4 spaces. -->
-    <rule ref="Generic.Arrays.ArrayIndent"/>
-    <!-- All array values must be followed by a comma, including the last value. -->
-    <rule ref="WebimpressCodingStandard.Arrays.TrailingArrayComma"/>
-    <!-- There MUST NOT be whitespace around the opening bracket or before the
-         closing bracket when referencing an array. -->
-    <rule ref="WebimpressCodingStandard.Arrays.Format"/>
-    <!-- All double arrow symbols MUST be aligned to one space after the
-         longest array key. -->
-    <rule ref="WebimpressCodingStandard.Arrays.DoubleArrow">
-        <properties>
-            <property name="maxPadding" value="50"/>
-        </properties>
-    </rule>
-    <!-- The short list syntax `[...]` SHOULD be used instead of `list(...)`. -->
-    <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
 
     <!-- 3. Declare Statements, Namespace, and Import Statements -->
 
@@ -426,7 +405,7 @@
          and returned on the next line. -->
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
 
-    <!-- 4.5 Method and Function Arguments -->
+    <!-- 4.5 Method and Function Parameters -->
 
     <!-- In the argument list, there MUST NOT be a space before each comma, and
          there MUST be one space after each comma. -->
@@ -468,7 +447,7 @@
     <!-- The question mark MUST be used when the default argument value is null. -->
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
 
-    <!-- 4.6 abstract, final, and static -->
+    <!-- 4.6 Modifier Keywords -->
 
     <!-- When present, the abstract and final declarations MUST precede the
          visibility declaration. -->
@@ -497,6 +476,12 @@
          splitting the argument list itself. -->
     <!-- checked by Generic.Functions.FunctionCallArgumentSpacing -->
     <!-- checked by PSR2.Methods.FunctionCallSignature -->
+
+    <!-- 4.8 Function Callable References -->
+
+    <!-- 4.9 Property Hooks -->
+
+    <!-- 4.10 Interface and abstract properties -->
 
     <!-- 5. Control Structures -->
 
@@ -551,7 +536,7 @@
     <!-- checked by PSR12.ControlStructures.BooleanOperatorPlacement -->
     <!-- checked by Squiz.ControlStructures.ControlSignature -->
 
-    <!-- 5.2 switch, case -->
+    <!-- 5.2 switch, case, match -->
 
     <!-- The case statement MUST be indented once from switch, and the break
          keyword (or other terminating keywords) MUST be indented at the same
@@ -697,6 +682,8 @@
          operators. -->
     <!-- checked by PSR12.Operators.OperatorSpacing -->
 
+    <!-- 6.4. Operator's placement -->
+
     <!-- 7. Closures -->
 
     <!-- Closures MUST be declared with a space after the function keyword, and
@@ -730,6 +717,8 @@
     <!-- Inherited variables passed via `use` MUST be used in closures. -->
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
 
+    <!-- 7.1 Short Closures -->
+
     <!-- 8. Anonymous Classes -->
 
     <!-- Anonymous Classes MUST follow the same guidelines and principles as
@@ -740,7 +729,42 @@
          following the last interface. -->
     <!-- checked by PSR12.Classes.AnonClassDeclaration -->
 
-    <!-- 9. Commenting and DocBlocks -->
+    <!-- 9. Enumerations -->
+
+    <!-- 10. Heredoc and Nowdoc -->
+
+    <!-- 11. Arrays -->
+
+    <!-- Additional Laminas rules -->
+
+    <!-- The short array syntax MUST be used to define arrays. -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <!-- All values in multiline arrays must be indented with 4 spaces. -->
+    <rule ref="Generic.Arrays.ArrayIndent"/>
+    <!-- All array values must be followed by a comma, including the last value. -->
+    <rule ref="WebimpressCodingStandard.Arrays.TrailingArrayComma"/>
+    <!-- There MUST NOT be whitespace around the opening bracket or before the
+         closing bracket when referencing an array. -->
+    <rule ref="WebimpressCodingStandard.Arrays.Format"/>
+    <!-- All double arrow symbols MUST be aligned to one space after the
+         longest array key. -->
+    <rule ref="WebimpressCodingStandard.Arrays.DoubleArrow">
+        <properties>
+            <property name="maxPadding" value="50"/>
+        </properties>
+    </rule>
+    <!-- The short list syntax `[...]` SHOULD be used instead of `list(...)`. -->
+    <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
+
+    <!-- 12. Attributes -->
+
+    <!-- 12.1 Basics -->
+
+    <!-- 12.2 Placement -->
+
+    <!-- 12.3 Compound attributes -->
+
+    <!-- 13. Commenting and DocBlocks -->
 
     <!-- Additional Laminas rules -->
 
